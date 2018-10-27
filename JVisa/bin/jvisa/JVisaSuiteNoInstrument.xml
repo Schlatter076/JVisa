@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="JVisa">
+    <test name="jvisa suite without instrument">
+        <groups>
+            <run>
+                <exclude name = "test-group-instrument"/>
+                <exclude name = "test-group-instrument-reset"/>
+                <exclude name = "test-group-instrument-windows"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="jvisa"/>
+        </packages>
+    </test>
+
+</suite>

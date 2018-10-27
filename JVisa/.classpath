@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="lib" path="lib/64bit/JnaVisa64_13.jar"/>
+	<classpathentry kind="lib" path="lib/64bit/JnaVisa64.jar"/>
+	<classpathentry kind="lib" path="lib/64bit/JVisaOneJar.jar"/>
+	<classpathentry kind="lib" path="lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar"/>
+	<classpathentry kind="lib" path="lib/testng/testng-6.8.1-dist.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

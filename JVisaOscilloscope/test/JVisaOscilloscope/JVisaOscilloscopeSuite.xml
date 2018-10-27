@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="JVisaOscilloscope">
+
+    <!--
+    see examples at http://testng.org/doc/documentation-main.html#testng-xml
+
+    <suite-files>
+        <suite-file path="./junit-suite.xml" />
+    </suite-files>
+
+    <test name="TimeOut">
+        <classes>
+            <class name="test.timeout.TimeOutTest" />
+            <class name="test.timeout.TimeOutFromXmlTest"/>
+            <class name="test.timeout.TimeOutThreadLocalSampleTest"/>
+        </classes>
+    </test>
+    -->
+    
+    <!--BraBlaster IP address (instrument name: rockphysics) -->
+<!--    <parameter name="instrument"  value="TCPIP::138.67.34.170::INSTR"/>-->
+    <!--Rockphysics IP address (instrument name: TEST) -->
+<!--    <parameter name="instrument" value="TCPIP::138.67.10.163::INSTR"/>-->
+    <!-- DHCP IP address -->
+    <parameter name="instrument"  value="TCPIP::192.168.1.103::INSTR"/>
+<!--    Channel list to acquire ("12.."), minimum value of one entry is 1, maximum is 4.-->
+    <parameter name="channels" value="1"/>
+<!--    If 1, show waveform in graph dialog.-->
+    <parameter name="showGraph" value="1"/>
+    <test name="JInstrument_TDS3000 suite">
+        <packages>
+            <package name="JVisaOscilloscope"/>
+        </packages>
+    </test>
+
+</suite>

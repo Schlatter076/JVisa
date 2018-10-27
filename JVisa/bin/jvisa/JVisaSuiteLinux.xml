@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="JVisaSuiteLinux">
+    <!--BraBlaster IP address (instrument name: rockphysics) -->
+<!--    <parameter name="instrument"  value="TCPIP::138.67.34.170::INSTR"/>-->
+    <!--Rockphysics IP address (instrument name: TEST) -->
+<!--    <parameter name="instrument"  value="TCPIP::138.67.10.163::INSTR"/>-->
+    <!-- DHCP IP address -->
+    <parameter name="instrument" value="TCPIP::192.168.1.106::INSTR"/>
+    <test name="jvisa suite under Linux (libreVisa)">
+        <groups>
+            <run>
+                <exclude name = "test-group-instrument-windows"/>
+                <exclude name = "test-group-instrument-reset"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="jvisa"/>
+        </packages>
+    </test>
+
+</suite>

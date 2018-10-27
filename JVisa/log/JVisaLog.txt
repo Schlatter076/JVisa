@@ -1,0 +1,62 @@
+八月 09, 2018 9:52:30 上午 jvisa.JVisa <init>
+信息: Unable to load library 'tkVisa64.dll': Native library (win32-x86-64/tkVisa64.dll) not found in resource path ([file:/D:/Java/JDK8/jre/lib/resources.jar, file:/D:/Java/JDK8/jre/lib/rt.jar, file:/D:/Java/JDK8/jre/lib/jsse.jar, file:/D:/Java/JDK8/jre/lib/jce.jar, file:/D:/Java/JDK8/jre/lib/charsets.jar, file:/D:/Java/JDK8/jre/lib/jfr.jar, file:/D:/Java/JDK8/jre/lib/ext/access-bridge-64.jar, file:/D:/Java/JDK8/jre/lib/ext/cldrdata.jar, file:/D:/Java/JDK8/jre/lib/ext/dnsns.jar, file:/D:/Java/JDK8/jre/lib/ext/jaccess.jar, file:/D:/Java/JDK8/jre/lib/ext/jfxrt.jar, file:/D:/Java/JDK8/jre/lib/ext/localedata.jar, file:/D:/Java/JDK8/jre/lib/ext/nashorn.jar, file:/D:/Java/JDK8/jre/lib/ext/RXTXcomm.jar, file:/D:/Java/JDK8/jre/lib/ext/sunec.jar, file:/D:/Java/JDK8/jre/lib/ext/sunjce_provider.jar, file:/D:/Java/JDK8/jre/lib/ext/sunmscapi.jar, file:/D:/Java/JDK8/jre/lib/ext/sunpkcs11.jar, file:/D:/Java/JDK8/jre/lib/ext/zipfs.jar, file:/L:/JVisa/JVisa/bin/, file:/L:/JVisa/JVisa/lib/64bit/JnaVisa64_13.jar, file:/L:/JVisa/JVisa/lib/64bit/JnaVisa64.jar, file:/L:/JVisa/JVisa/lib/64bit/JVisaOneJar.jar, file:/L:/JVisa/JVisa/lib/CopyLibs/org-netbeans-modules-java-j2seproject-copylibstask.jar, file:/L:/JVisa/JVisa/lib/testng/testng-6.8.1-dist.jar])
+八月 09, 2018 9:52:30 上午 jvisa.JVisa <init>
+信息: Success loading nivisa64.dll.
+八月 09, 2018 9:52:30 上午 jvisa.JVisa getResourceVersion
+信息: Get resource version.
+八月 09, 2018 9:52:30 上午 jvisa.JVisa getAttribute
+信息: Get attribute 0x3FFF0170.
+八月 09, 2018 9:52:30 上午 jvisa.JVisaStatus printStatusDescription
+详细: viStatus = 0x00000000
+八月 09, 2018 9:52:30 上午 jvisa.JVisa getAttribute
+信息: Attribute value = 0x00500800
+八月 09, 2018 9:52:30 上午 jvisa.JVisa getResourceVersion
+信息: Resource version = 0x00500800
+八月 09, 2018 9:52:30 上午 jvisa.JVisa openInstrument
+信息: Open instrument USB0::6833::2500::DM3R200200081::0::INSTR.
+八月 09, 2018 9:52:30 上午 jvisa.JVisaStatus printStatusDescription
+详细: viStatus = 0x00000000
+八月 09, 2018 9:52:30 上午 jvisa.JVisa openInstrument
+信息: viInstrument = 0x00000001.
+八月 09, 2018 9:52:30 上午 jvisa.JVisa clear
+信息: Calling viClear(1).
+八月 09, 2018 9:52:30 上午 jvisa.JVisaStatus printStatusDescription
+详细: viStatus = 0x00000000
+八月 09, 2018 9:52:30 上午 jvisa.JVisa getAttribute
+信息: Get attribute 0x3FFF001A.
+八月 09, 2018 9:52:30 上午 jvisa.JVisaStatus printStatusDescription
+详细: viStatus = 0x00000000
+八月 09, 2018 9:52:30 上午 jvisa.JVisa getAttribute
+信息: Attribute value = 0x07D0
+八月 09, 2018 9:52:30 上午 jvisa.JVisa setAttribute
+信息: Set attribute 0x3FFF001A to 0x00001403.
+八月 09, 2018 9:52:30 上午 jvisa.JVisaStatus printStatusDescription
+详细: viStatus = 0x00000000
+八月 09, 2018 9:52:30 上午 jvisa.JVisa getAttribute
+信息: Get attribute 0x3FFF001A.
+八月 09, 2018 9:52:30 上午 jvisa.JVisaStatus printStatusDescription
+详细: viStatus = 0x00000000
+八月 09, 2018 9:52:30 上午 jvisa.JVisa getAttribute
+信息: Attribute value = 0x1403
+八月 09, 2018 9:52:30 上午 jvisa.JVisa setAttribute
+信息: Set attribute 0x3FFF001A to 0x000007D0.
+八月 09, 2018 9:52:30 上午 jvisa.JVisaStatus printStatusDescription
+详细: viStatus = 0x00000000
+八月 09, 2018 9:52:30 上午 jvisa.JVisa getAttribute
+信息: Get attribute 0x3FFF0018.
+八月 09, 2018 9:52:30 上午 jvisa.JVisaStatus printStatusDescription
+详细: viStatus = 0x00000000
+八月 09, 2018 9:52:30 上午 jvisa.JVisa getAttribute
+信息: Attribute value = 0x0A
+八月 09, 2018 9:52:30 上午 jvisa.JVisa write
+信息: Write command "*IDN?".
+八月 09, 2018 9:52:30 上午 jvisa.JVisaStatus printStatusDescription
+严重: viStatus = 0xFFFFFFFFBFFF000E
+八月 09, 2018 9:52:30 上午 jvisa.JVisa write
+严重: Could not write *IDN?.
+八月 09, 2018 9:52:30 上午 jvisa.JVisa write
+严重: OK
+jvisa.JVisaException: OK
+	at jvisa.JVisa.write(JVisa.java:533)
+	at jvisa.JVisaNGTest.main(JVisaNGTest.java:564)
+

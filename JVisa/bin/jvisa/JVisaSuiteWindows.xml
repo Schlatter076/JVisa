@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="JVisa">
+
+    <!--
+    see examples at http://testng.org/doc/documentation-main.html#testng-xml
+
+    <suite-files>
+        <suite-file path="./junit-suite.xml" />
+    </suite-files>
+
+    <test name="TimeOut">
+        <classes>
+            <class name="test.timeout.TimeOutTest" />
+            <class name="test.timeout.TimeOutFromXmlTest"/>
+            <class name="test.timeout.TimeOutThreadLocalSampleTest"/>
+        </classes>
+    </test>
+    -->
+    
+<!--    <parameter name="instrument"  value="TCPIP::138.67.34.158::INSTR"/>-->
+    <!-- Rockphysics IP address (instrument name: TEST) -->
+<!--    <parameter name="instrument"  value="TCPIP::138.67.10.163::INSTR"/>-->
+    <!-- BraBlaster IP address (instrument name: rockphysics) -->
+<!--    <parameter name="instrument"  value="TCPIP::138.67.34.170::INSTR"/>-->
+    <!-- DHCP IP address -->
+    <parameter name="instrument" value="TCPIP::192.168.1.103::INSTR"/>
+    <test name="jvisa suite">
+        <packages>
+            <package name="jvisa"/>
+        </packages>
+    </test>
+</suite>
